@@ -9,11 +9,15 @@
 }
 
 righthand =  {
-  \key a \major
+  \key fis \minor
   \numericTimeSignature \time 3/4
-
   \clef "treble"
   \relative c'' {
+    << { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
+
+    <d-1 fis-2>4( <a'-3 cis-5>4. <gis b>8 | <e gis>4 <cis'-3 e-5>4. <b d>8) | r4 << { <gis-2 cis-5>4( <fis b>4  a2 gis4) } \\ { s2 <b, d>2. } >> \break
+
+    % repeat first four measures
     << { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
 
     s2.
@@ -27,11 +31,11 @@ righthand =  {
 }
 
 lefthand =  {
-  \key a \major
+  \key fis \minor
   \numericTimeSignature \time 3/4
   \clef "bass"
   \relative c {
-    s2.*5
+    s2.*12
 
     
 
