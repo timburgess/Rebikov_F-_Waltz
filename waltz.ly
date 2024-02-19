@@ -17,15 +17,18 @@ cfc = { r4 <cis eis cis'> <cis eis cis'> }
 righthand =  {
   \key fis \minor
   \numericTimeSignature \time 3/4
-  \tempo 4 = 110
+  \tempo 4 = 100
   \clef treble
   \relative c'' {
-    << { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
+    %<< { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
+    R2.*4 \break
 
-    <d-1 fis-2>4( <a'-3 cis-5>4. <gis b>8 | <e gis>4 <cis'-3 e-5>4. <b d>8) | r4 << { <gis-2 cis-5>4( <fis b>4  a2 gis4) } \\ { s2 <b, d>2. } >> \break
+    %<d-1 fis-2>4( <a'-3 cis-5>4. <gis b>8 | <e gis>4 <cis'-3 e-5>4. <b d>8) | r4 << { <gis-2 cis-5>4( <fis b>4  a2 gis4) } \\ { s2 <b, d>2. } >> \break
+    R2.*4 \break
 
     % repeat first four measures
-    << { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
+    %<< { <a-1 cis-2>4\mf( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> | << { <a-1 cis-2>4( r4. <a cis>8 | <e' gis>2 <d fis>4) } \\ { r4. <fis a>4. | b,2. } >> \break
+    R2.*4 \break
 
     R2.*4 \break
   }
@@ -34,16 +37,14 @@ righthand =  {
     % 17
     \fbf \dad \dad \cfc \break
 
-    << { d'2 cis'4 | fis'2 b4 | a2 gis4 | cis'2. } \\ { r4 <fis ais> <fis ais> | r4 <fis b> <fis b> | r4 <cis eis> <cis eis gis> | r4 <cis gis> <cis fis> } >> \break
+    % 21
+    << { d'2-4 cis'4 | fis'2 b4 | a2 gis4 | cis'2. } \\ { r4 <fis ais> <fis ais> | r4 <fis b> <fis b> | r4 <cis eis> <cis eis> | r4 <cis gis> <cis fis> } >> \break
 
     % 25
     \fbf \dad \dad \cfc \break
 
-    R2.*4 \break
-    R2.*4 \break
-    R2.*4 \break
-    R2.*4
-
+    % 29
+    << { d'2-4( cis'4 | fis'2 b4 | a2. | gis2) r4 } \\ { r4 <fis ais> <fis ais> | r4 <fis b> <fis b> | r4 <dis fis> <dis fis> | r4 <cis eis> } >> \break
 
    \bar "|."
   }
